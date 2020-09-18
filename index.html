@@ -1,137 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WEBDEV</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <nav>
-          <ul class='list'>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Syllabus</a></li>
-            <li>
-              <svg width="44" height="45">
-                <use href="./assets/sprite.svg#icon-logo"></use>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEBDEV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+
+      <nav class='nav-container'>
+        <h1 class='visually-hidden'>webdev</h1>
+        <ul class='list nav-list'>
+          <li><a href="#" class='nav-link current'>About</a></li>
+          <li><a href="#" class='nav-link'>Syllabus</a></li>
+          <li class='logo'>
+            <svg width="44" height="45">
+              <use href="./assets/sprite.svg#icon-logo"></use>
+            </svg>
+          </li>
+          <li><a href="#" class='nav-link'>Projects</a></li>
+          <li><a href="#" class='nav-link'>FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Основное содержание -->
+
+  <main>
+    <section class='your-life'>
+      <div class="container hero-container">
+        <img src="./assets/img/bg-image.jpg" alt="laptop" class='overlay' />
+
+        <h2 class="hero-title">your life is WebDev</h2>
+        <p class="hero-text">
+          Whatever the approach to development may be, the final program must
+          satisfy some fundamental properties
+        </p>
+        <button class='btn btn-hero' type="button">get started</button>
+
+        <ul class='list your-life-icons'>
+          <li class='social-icon'>
+            <a href="www.gmail.com"><svg width="20" height="20">
+                <use href="./assets/sprite.svg#icon-mail_fff"></use>
               </svg>
-            </li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">FAQ</a></li>
-          </ul>
-        </nav>
+            </a>
+          </li>
+          <li class='social-icon'>
+            <a href="www.facebook.com"><svg width="20" height="20">
+                <use href="./assets/sprite.svg#icon-facebook_fff"></use>
+              </svg>
+            </a>
+          </li>
+          <li class='social-icon'>
+            <a href="www.https://www.instagram.com/"><svg width="20" height="20">
+                <use href="./assets/sprite.svg#icon-insta_fff"></use>
+              </svg></a>
+          </li>
+          <li class='social-icon'>
+            <a href="www.youtube.com"><svg width="20" height="20">
+                <use href="./assets/sprite.svg#icon-youtube_fff"></use>
+              </svg></a>
+          </li>
+        </ul>
       </div>
-    </header>
-
-    <!-- Основное содержание -->
-
-    <main>
-      <section>
-        <div class="container">
-          <h1>webdev</h1>
-          <h2>your life is WebDev</h2>
-          <p>
-            Whatever the approach to development may be, the final program must
-            satisfy some fundamental properties
-          </p>
-          <button type="button">get started</button>
-
-          <ul class='list'>
-            <li>
-              <a href="www.gmail.com"
-                ><svg width="20" height="20">
-                  <use href="./assets/sprite.svg#icon-mail_fff"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="www.facebook.com"
-                ><svg width="20" height="20">
-                  <use href="./assets/sprite.svg#icon-facebook_fff"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="www.https://www.instagram.com/"
-                ><svg width="20" height="20">
-                  <use href="./assets/sprite.svg#icon-insta_fff"></use></svg></a>
-            </li>
-            <li>
-              <a href="www.youtube.com"
-                ><svg width="20" height="20">
-                  <use href="./assets/sprite.svg#icon-youtube_fff"></use></svg></a>
-            </li>
-          </ul>
+    </section>
+    <section class='rappresent'>
+      <div class="container rappresent-container">
+        <div class='rappr-wrapper'>
+          <h3 class='section-title'><strong>Rappresent your idea with<br> a smart Design</strong></h3>
+          <p class='section-text'>Tasks accompanying and related to programming include: testing, debugging, source code
+            maintenance, implementation of build systems, and management of derived artifacts, such as the machine code
+            of computer programs. </p>
+          <button class='btn' type="button">get started</button>
         </div>
-      </section>
-      <section>
-        <div class="container">
-          <h3>Rappresent your idea with a smart Design</h3>
-          <p>Tasks accompanying and related to programming include: testing, debugging, source code maintenance, implementation of build systems, and management of derived artifacts, such as the machine code of computer programs. </p>
-          <button type="button">get started</button>
-          <img src="./assets/img/content-image-1.jpg" alt="working people" width="407" height="582" />
+        <img src="./assets/img/content-image-1.jpg" alt="working people" width="407" height="582" />
+      </div>
+    </section>
+    <section class='our-community'>
+      <div class="container community-container">
+        <div class='comm-left'>
+          <img class='community-photo' src="./assets/img/icon.png" alt="woman" width="45" height="45" />
+          <h3 class='community-title'>our community</h3>
+          <p class='community-text'>A hacker is any skilled computer expert that uses their technical knowledge to
+            overcome a problem, but it can also mean a security hacker in common language</p>
         </div>
-      </section>
-      <section>
-        <div class="container">
-          <img src="./assets/img/icon.png" alt="woman" width="45" height="45" />
-          <h3>our community</h3>
-          <p>A hacker is any skilled computer expert that uses their technical knowledge to overcome a problem, but it can also mean a security hacker in common language</p>
-        <p> Слайдер </p>
-        <img src="./assets/img/slider-item-1.jpg" alt="three computers" width="407" height="244" />
-        <img src="./assets/img/slider-item-2.jpg" alt="laptop" width="407" height="244" />
-        <img src="./assets/img/slider-item-3.jpg" alt="laptop" width="20" height="244" />
+
+        <div class='slider-container'>
+          <div class='slider-signature'>
+            <svg width="13" height="13">
+              <use href="./assets/sprite.svg#icon-arrow-l"></use>
+            </svg>
+            <span class='slider-sign'>&nbsp;&nbsp;1&nbsp;</span><span class='slider-sign'>/</span><span
+              class='slider-sign'>&nbsp;5&nbsp;&nbsp;
+            </span>
+            <svg width="13" height="13">
+              <use href="./assets/sprite.svg#icon-arrow-r"></use>
+            </svg>
+          </div>
+
+          <img src="./assets/img/slider-item-1.jpg" alt="three computers" width="407" height="244" />
+          <img src="./assets/img/slider-item-2.jpg" alt="laptop" width="407" height="244" />
+          <img src="./assets/img/slider-item-3.jpg" alt="laptop" width="20" height="244" />
         </div>
-      </section>
-<section>
-  <div class="container">
-    <img src="./assets/img/content-image-2.jpg" alt="laptop" width="407" height="582" />
-    <h3>Implement right Code</h3>
-    <p>These might be considered part of the programming process, but often the term software development is used for this larger process with the term programming, implementation</p>
-    <button type="button">Learn more</button>
-  </div>
-</section>
+      </div>
+    </section>
+    <section class='implement'>
+      <div class="container rappresent-container">
+        <img src="./assets/img/content-image-2.jpg" alt="laptop" width="407" height="582" />
+        <div class='implement-wrapper'>
+          <h3 class='section-title'><strong>Implement right Code</strong></h3>
+          <p class='section-text'>These might be considered part of the programming process, but often the term software
+            development is used
+            for this larger process with the term programming, implementation</p>
+          <button class='btn' type="button">Learn more</button>
+        </div>
+      </div>
+    </section>
 
-<section>
-  <div class="container">
-    <label for="mail">sign up for our newsletter</label>
-    <input type="email" name="mail" id="mail" placeholder="E-mail" />
-    <button type="button"><svg width="19" height="17">
-      <use href="./assets/sprite.svg#icon-fa-check"></use></svg></button>
-  </div>
-</section>
-<section>
-  <h3>Download the App</h3>
-  <p>Machine code was the language of early programs, written in the instruction set of the particular machine, often in binary notation.</p>
-  <button type="button">apple store</button> 
-  <!-- возможно ссылки!!! -->
-  <button type="button">Play Market</button>
+    <section class='subscribe'>
+      <div class="container subscribe-container">
+        <label for="mail" class='subs-label'>sign up for our newsletter</label>
+        <div class='subs-div'>
+          <input class='subs-input' type="email" name="mail" id="mail" placeholder="E-mail" />
+          <button class='subs-btn' type="button"><svg width="19" height="17">
+              <use href="./assets/sprite.svg#icon-fa-check"></use>
+            </svg></button></div>
+      </div>
+    </section>
+    <section class='download'>
+      <div class="container download-container">
+        <h3 class='download-title'>Download the App</h3>
+        <p class='download-text'>Machine code was the language of early programs, written in the instruction set of the
+          particular machine,
+          often in binary notation.</p>
+        <div class='download-btns'>
+          <div class='download-button'>
+            <button class='btn-download' type="button">apple store</button>
+            <div class='icon-div'>
+              <svg width="16" height="18">
+                <use href="./assets/sprite.svg#icon-apple"></use>
+              </svg>
+            </div>
+            </button>
+          </div>
+          <div class='download-button'>
+            <button class='btn-download' type="button">Play Market</button>
+            <div class='icon-div'>
+              <svg width="19" height="22">
+                <use href="./assets/sprite.svg#icon-android"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
 
 
-</section>
-    </main>
-<footer>
-  <nav>
-    <ul>
-      <li><a href='#'>Credits</a></li>
-    <li><a href='#'>Privacy</a></li>
-    <li><a href='#'>Our teams</a></li></ul>
-  </nav>
-  <svg width="44" height="45">
-    <use href="./assets/sprite.svg#icon-logo"></use>
-  </svg>
-  <p>by TonYem for RSS at 2020</p>
-</footer>
+      </div>
+      </div>
 
-  </body>
+
+    </section>
+  </main>
+  <footer class='footer'>
+    <div class="container footer-container">
+      <nav>
+        <ul class='list footer-list'>
+          <li><a class='footer-list-item' href='#'>Credits</a></li>
+          <li><a class='footer-list-item' href='#'>Privacy</a></li>
+          <li><a class='footer-list-item' href='#'>Our teams</a></li>
+        </ul>
+      </nav>
+      <svg width="44" height="45" class='logo-footer'>
+        <use href="./assets/sprite.svg#icon-logo"></use>
+      </svg>
+      <p class='footer-text'>by TonYem for RSS at 2020</p>
+    </div>
+  </footer>
+
+</body>
+
 </html>
